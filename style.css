@@ -1,0 +1,123 @@
+body{
+    background-image: url("background_img.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.heading{
+    font-size: 80px;
+    position: relative;
+    left: 500px;
+    /* top: 10px; */
+}
+.start_button button {
+    height: 100px;
+    width: 400px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bolder; 
+    border-radius: 10px;
+    position: relative;
+    left: 450px;
+    top: 200px;
+}
+.start_button button:hover{
+    background-color: antiquewhite;
+    color: black;
+    border: 2px solid rgba(237, 93, 15, 0.94);
+}
+
+.Que_box{
+    opacity: 0;
+    position: relative;
+    left: 310px;
+    bottom: 80px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 12px;
+    width: 800px;
+    height: 405px;
+    padding: 0 15px;
+    transform:  scale(0.9);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.Que_box.activeQuiz{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.question{
+    font-size: 50px;
+    font-weight: 400;
+    position: relative;
+    left: 10px;
+}
+
+.sc_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.sc_box span{
+    font-weight: 350;
+}
+
+.score{
+    background-color: rgb(12, 131, 236);
+    border-radius: 2px;
+    height: 48px;
+    width: 125px;
+    padding: 2px 9px 6px 16px;
+    font-weight: 330;
+    color: whitesmoke;
+    position: relative;
+    top: 18px;
+    border-radius: 5px;
+}
+.option_list .option {
+    font-size: 22px;
+    padding: 10px 0;
+    display: block;
+    background-color: aliceblue;
+    border: 1px solid rgba(0, 0, 255, 0.327);
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+.option_list .option.correct{
+    background: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+.option_list .option.incorrect{
+   color: #721c24;
+   background: #f8d7da;
+   border-color: #721c24;
+}
+.option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border-color: #b8daff;
+    cursor: pointer;
+}
+.option_list .option:last-child{
+    margin-bottom: 0px;
+}
+.sc_box button{
+   position: relative;
+   top: 20px;
+   right: 50px;
+   border-radius: 5px;
+   width: 100px;
+   background-color: rgb(12, 131, 236);
+   border: 1px solid rgb(12, 131, 236);
+   color: whitesmoke;
+}
+.sc_box .Next:hover{
+    background:#0263ca ;
+}
+footer .Next{
+    padding: 0 8px;
+}
